@@ -24,3 +24,67 @@ Scalable: Suitable for managing large sets of data efficiently.
 Merkle Tree: A binary tree where each leaf node represents a hash of a data block, and each non-leaf node represents the combined hash of its children.
 Merkle Proof: A proof generated for a specific leaf in the tree that allows a verifier to confirm its inclusion in the root without needing to reveal all the data.
 Cross-Chain Relay: A mechanism for submitting Merkle proofs between different blockchain networks to verify data integrity.
+
+
+## Getting Started
+
+### Prerequisites
+- [Rust](https://www.rust-lang.org/) installed on your machine
+- Cargo (Rust package manager) installed
+
+### Installation
+1. Clone the repository:
+   ```bash
+   git clone https://github.com/your-repo/cross-chain-merkle-proof.git
+   cd cross-chain-merkle-proof
+    ```
+2. Build the project:
+
+    ```bash
+    cargo build
+    ```
+
+3. Run the project
+
+    ```bash
+    cargo run
+    ```
+
+This will start the API server at http://127.0.0.1:xxxx
+
+
+## API Endpoints
+
+1. Create Merkle Tree
+
+URL: /merkle_tree
+Method: POST
+Description: Creates a Merkle Tree from the provided leaf nodes and returns the root hash.
+
+Request Body:
+```json
+{
+  "leaves": [
+    [0, 1, 2, 3],
+    [4, 5, 6, 7],
+    [8, 9, 10, 11]
+  ]
+}
+```
+
+Response:
+```json
+{
+  "root_hash": [
+    255, 243, 169, 188, 221, 55, 54, 61, 112, 60, 28, 79, 149, 18, 83, 54,
+    134, 21, 120, 104, 240, 212, 241, 106, 15, 2, 208, 241, 218, 36, 249, 162
+  ]
+}
+```
+
+<<C>>
+
+
+
+
+
