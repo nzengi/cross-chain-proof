@@ -35,7 +35,7 @@ Cross-Chain Relay: A mechanism for submitting Merkle proofs between different bl
 ### Installation
 1. Clone the repository:
    ```bash
-   git clone https://github.com/your-repo/cross-chain-merkle-proof.git
+   git clone https://github.com/nzengi/cross-chain-proof.git
    cd cross-chain-merkle-proof
     ```
 2. Build the project:
